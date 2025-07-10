@@ -2,14 +2,10 @@
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using System;
-using System.Collections.Generic;
-using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.Localization;
 using Terraria.Utilities;
 using TouhouPets;
-using TouhouPets.Content.Buffs;
-using TouhouPets.Content.Buffs.PetBuffs;
 
 namespace LenenPets.Content.Pets.YabusameHoulen;
 public class YabusameHoulen : BasicTouhouPet
@@ -234,7 +230,7 @@ public class YabusameHoulen : BasicTouhouPet
     }
     private void UpdateEyePosition()
     {
-        float time = Main.GlobalTimeWrappedHourly * 2f;
+        float time = Main.GlobalTimeWrappedHourly * 4f;
         eyePositionOffset = new Vector2(1.2f * (float)Math.Cos(time), 0.35f * (float)Math.Sin(time)) * 26f;
         eyePosition = Projectile.Center + eyePositionOffset + new Vector2(0, 8);
     }

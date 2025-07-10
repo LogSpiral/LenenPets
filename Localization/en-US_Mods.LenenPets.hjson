@@ -1,24 +1,30 @@
 Projectiles: {
 	YabusameHoulen: {
-		KoishiGreetingsToYabusame: ""
-		YabusameReplyToKoishi: ""
+		KoishiGreetingsToYabusame: I havn't seen you yet. Why your color is similar with me, are you a koi-shi as well?
+		YabusameReplyToKoishi: Hmmm, my name is Yabusame, Yabusame Houlen. You are not like a stone... wait where are you, are you the youkai of pebbles?
 		DisplayName: Yabusame Houlen
-		Regular_0: Mods.LenenPets.Projectiles.YabusameHoulen.Regular_0
-		Regular_1: Mods.LenenPets.Projectiles.YabusameHoulen.Regular_1
-		Regular_2: Mods.LenenPets.Projectiles.YabusameHoulen.Regular_2
+		Regular_0: It seems that I crossing to some where wierd, Uwa
+		Regular_1: Do you reconize Tsurubami？ Is this the outside world that Tsurubami in?
+		Regular_2: I bring some food, do you want a bite?
 	}
 }
 
 Buffs: {
 	YabusameBuff: {
-		DisplayName: Yabusame Buff
-		Description: Mods.LenenPets.Buffs.YabusameBuff.Description
+		DisplayName: Feathers Flying off the Beaten Path
+		Description: How did they get here?
 	}
 }
 
 Items: {
 	YabusameDimensionPiece: {
-		DisplayName: Yabusame Dimension Piece
-		Tooltip: ""
+		DisplayName: Dimension Piece
+		Tooltip:
+			'''
+			Summon a Bird of Dimension
+
+			Since they has the ability to crossing the dimensions
+			It might be okay to transport the Terra world into Mugenri?
+			'''
 	}
 }

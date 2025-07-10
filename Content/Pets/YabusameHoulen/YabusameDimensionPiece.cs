@@ -7,6 +7,7 @@ public class YabusameDimensionPiece:ModItem
 {
     public override void SetStaticDefaults()
     {
+        ItemID.Sets.ShimmerTransformToItem[528] = Type;
     }
     public override void SetDefaults()
     {
