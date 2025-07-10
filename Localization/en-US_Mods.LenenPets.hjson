@@ -1,1 +1,24 @@
+Projectiles: {
+	YabusameHoulen: {
+		KoishiGreetingsToYabusame: ""
+		YabusameReplyToKoishi: ""
+		DisplayName: Yabusame Houlen
+		Regular_0: Mods.LenenPets.Projectiles.YabusameHoulen.Regular_0
+		Regular_1: Mods.LenenPets.Projectiles.YabusameHoulen.Regular_1
+		Regular_2: Mods.LenenPets.Projectiles.YabusameHoulen.Regular_2
+	}
+}
 
+Buffs: {
+	YabusameBuff: {
+		DisplayName: Yabusame Buff
+		Description: Mods.LenenPets.Buffs.YabusameBuff.Description
+	}
+}
+
+Items: {
+	YabusameDimensionPiece: {
+		DisplayName: Yabusame Dimension Piece
+		Tooltip: ""
+	}
+}

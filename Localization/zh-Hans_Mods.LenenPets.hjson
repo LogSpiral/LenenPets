@@ -1,0 +1,30 @@
+Projectiles: {
+	YabusameHoulen: {
+		KoishiGreetingsToYabusame: 是没见过的新面孔，怎么颜色和我有点像，你也是小石子吗
+		YabusameReplyToKoishi: 唔嗯，我叫薮雨哦，凤联薮雨。你看着不像是石头啊...欸人呢，小石子的妖怪吗
+		DisplayName: 凤联薮雨
+		Regular_0: 似乎不小心穿越到奇怪的地方了，呜哇
+		Regular_1: 你认识鹤喰桑吗，这里是鹤喰所在的外界吗
+		Regular_2: 我带了便当哦，你要来一口吗
+	}
+}
+
+Buffs: {
+	YabusameBuff: {
+		DisplayName: 凤联薮雨
+		Description: 祂是怎么到这里来的？
+	}
+}
+
+Items: {
+	YabusameDimensionPiece: {
+		DisplayName: 次元碎片
+		Tooltip:
+			'''
+			召唤一只次元之鸟
+
+			因为拥有飞跃次元的能力
+			把整个泰拉大陆并入无现里也很正常对吧？
+			'''
+	}
+}
