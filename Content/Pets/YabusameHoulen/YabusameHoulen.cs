@@ -142,12 +142,11 @@ public class YabusameHoulen : BasicTouhouPet
     {
         TextColor = Color.LightGray//new Color(145, 255, 183),
     };
+    protected override string ChatKeyToRegister(string name, int index) => this.GetLocalizationKey($"Regular_{index}");
     public override void RegisterChat(ref string name, ref Vector2 indexRange)
     {
-        //name = "Yabusame";
-        //indexRange = default;
-        for (int n = 0; n < 3; n++)
-            this.GetLocalization($"Regular_{n}");
+        name = "Yabusame";
+        indexRange = new Vector2(0, 2);
     }
     public override void SetRegularDialog(ref int timePerDialog, ref int chance, ref bool whenShouldStop)
     {
@@ -159,7 +158,7 @@ public class YabusameHoulen : BasicTouhouPet
     {
         WeightedRandom<LocalizedText> chat = new();
         for (int n = 0; n < 3; n++)
-            chat.Add(this.GetLocalization($"Regular_{n}"));
+            chat.Add(ChatDictionary[n]);
         return chat;
     }
     public override void VisualEffectForPreview()

@@ -17,7 +17,7 @@ public static class LenenPetsHelper
 
     public static void PetDialog(int uniqueID, LocalizedText text, Func<bool> condition = null, int weight = 1) 
     {
-        TouhouPets.TouhouPets.Instance.Call(nameof(PetDialog),LenenPets.Instance, uniqueID, text, condition, weight);
+        TouhouPets.TouhouPets.CrossModSupport.PetDialog(LenenPets.Instance, uniqueID, text, condition, weight);
     }
 
     public static void PetDialog(TouhouPetID uniqueID, LocalizedText text, Func<bool> condition = null, int weight = 1) 
@@ -31,7 +31,8 @@ public static class LenenPetsHelper
         int turn = -1;
         foreach (var (id, text) in chatRoomInfoList)
             realList.Add((id, text, turn++));
-        TouhouPets.TouhouPets.Instance.Call(nameof(PetChatRoom), LenenPets.Instance, realList);
+
+        TouhouPets.TouhouPets.CrossModSupport.PetChatRoom(LenenPets.Instance, realList);
     }
 
     public static void PetChatRoomFullRegister(List<(int, LocalizedText)> chatRoomInfoList, Func<bool> condition = null, int weight = 1) 
