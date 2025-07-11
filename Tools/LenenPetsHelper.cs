@@ -10,7 +10,7 @@ public static class LenenPetsHelper
 {
     extension<T>(T) where T : BasicTouhouPet
     {
-        public static int PetID() => ModTouhouPetLoader.TouhouPetType<T>();
+        public static int PetID() => ModTouhouPetLoader.UniqueID<T>();
 
         public static LocalizedText GetLocalization(string suffix) => GetInstance<T>().GetLocalization(suffix);
     }
