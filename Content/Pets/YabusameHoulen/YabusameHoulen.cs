@@ -238,7 +238,7 @@ public class YabusameHoulen : BasicTouhouPet
     {
         Projectile.timeLeft = 2;
 
-        bool noActiveBuff = !player.HasBuff(BuffType<YabusameBuff>()) && !player.HasBuff(BuffType<YabusameBuff>());
+        bool noActiveBuff = !player.HasBuff(BuffType<YabusameBuff>());
         bool shouldInactiveNormally = noActiveBuff;
 
         if (shouldInactiveNormally || player.dead)

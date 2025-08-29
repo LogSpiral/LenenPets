@@ -8,13 +8,13 @@
 		<LangVersion>preview</LangVersion>
 	</PropertyGroup>
 	<ItemGroup>
-	  <Folder Include="Content\Pets\TsubakuraEnraku\" />
-	</ItemGroup>
-	<ItemGroup>
 	  <PackageReference Include="Solaestas.tModLoader.ModBuilder" Version="1.6.1" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\TouhouPets\TouhouPets.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Content\Pets\TsubakuraEnraku\" />
 	</ItemGroup>
 
 	<!-- References -->

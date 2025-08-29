@@ -7,12 +7,25 @@ Projectiles: {
 		Regular_1: Do you reconize Tsurubami？ Is this the outside world that Tsurubami in?
 		Regular_2: I bring some food, do you want a bite?
 	}
+
+	MyPet: {
+		ChatText_0: Mods.LenenPets.Projectiles.MyPet.ChatText_0
+		ChatText_1: Mods.LenenPets.Projectiles.MyPet.ChatText_1
+		ChatText_2: Mods.LenenPets.Projectiles.MyPet.ChatText_2
+		ChatText_3: Mods.LenenPets.Projectiles.MyPet.ChatText_3
+		DisplayName: My Pet
+	}
 }
 
 Buffs: {
 	YabusameBuff: {
 		DisplayName: Feathers Flying off the Beaten Path
 		Description: How did they get here?
+	}
+
+	MyPetBuff: {
+		DisplayName: My Pet Buff
+		Description: Mods.LenenPets.Buffs.MyPetBuff.Description
 	}
 }
 
@@ -26,5 +39,10 @@ Items: {
 			Since they has the ability to crossing the dimensions
 			It might be okay to transport the Terra world into Mugenri?
 			'''
+	}
+
+	MyPetItem: {
+		DisplayName: My Pet Item
+		Tooltip: ""
 	}
 }
