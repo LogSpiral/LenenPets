@@ -3,6 +3,7 @@ global using Terraria.ModLoader;
 global using Terraria.ID;
 global using LenenPets.Tools;
 global using static Terraria.ModLoader.ModContent;
+using Terraria.DataStructures;
 
 namespace LenenPets;
 

@@ -2,18 +2,22 @@ Projectiles: {
 	YabusameHoulen: {
 		KoishiGreetingsToYabusame: 是没见过的新面孔，怎么颜色和我有点像，你也是小石子吗
 		YabusameReplyToKoishi: 唔嗯，我叫薮雨哦，凤联薮雨。你看着不像是石头啊...欸人呢，小石子的妖怪吗
-		DisplayName: 凤联薮雨
+		DisplayName: 凤联 薮雨
 		Regular_0: 似乎不小心穿越到奇怪的地方了，呜哇
 		Regular_1: 你认识鹤喰桑吗，这里是鹤喰所在的外界吗
 		Regular_2: 我带了便当哦，你要来一口吗
 	}
 
-	MyPet: {
-		ChatText_0: Mods.LenenPets.Projectiles.MyPet.ChatText_0
-		ChatText_1: Mods.LenenPets.Projectiles.MyPet.ChatText_1
-		ChatText_2: Mods.LenenPets.Projectiles.MyPet.ChatText_2
-		ChatText_3: Mods.LenenPets.Projectiles.MyPet.ChatText_3
-		DisplayName: My Pet
+	TsubakuraEnraku: {
+		FindYabusame: 薮雨也不清楚的话那就麻烦大了
+		YabusameReply: 薮雨不知道喵
+		Reminder: 这地方似乎相当原始而且凶险，我不在的时候保护好自己
+		YabusameReply2: 知道啦——大不了一个次元决裂甩那帮家伙脸上得了
+		WishToExit: 希望能撑到找到出路的那一天吧...
+		DisplayName: 燕乐 玄鸟
+		Regular_0: 在搞清楚情况之前我先跟着你做点调查得了
+		Regular_1: 怎么想都大约是那家伙干的好事
+		Regular_2: 麻烦事真是越堆越多了...
 	}
 }
 
@@ -23,9 +27,9 @@ Buffs: {
 		Description: 祂是怎么到这里来的？
 	}
 
-	MyPetBuff: {
-		// DisplayName: My Pet Buff
-		// Description: Mods.LenenPets.Buffs.MyPetBuff.Description
+	TsubakuraBuff: {
+		DisplayName: 暗转墨花
+		Description: 另一位阐里神主也来到这里了
 	}
 }
 
@@ -41,8 +45,15 @@ Items: {
 			'''
 	}
 
-	MyPetItem: {
-		// DisplayName: My Pet Item
-		// Tooltip: ""
+	MonochromeChinesebrush: {
+		DisplayName: 单彩毛笔
+		Tooltip:
+			'''
+			召唤一只单彩之鸟
+
+			作为阐里方大约最靠谱的一位
+			决定跟着你调查这个世界，以及来到这里的原因
+			——或者单纯以此为借口跟着你一起享乐也说不定
+			'''
 	}
 }

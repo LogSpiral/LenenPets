@@ -8,12 +8,20 @@ Projectiles: {
 		Regular_2: I bring some food, do you want a bite?
 	}
 
-	MyPet: {
-		ChatText_0: Mods.LenenPets.Projectiles.MyPet.ChatText_0
-		ChatText_1: Mods.LenenPets.Projectiles.MyPet.ChatText_1
-		ChatText_2: Mods.LenenPets.Projectiles.MyPet.ChatText_2
-		ChatText_3: Mods.LenenPets.Projectiles.MyPet.ChatText_3
-		DisplayName: My Pet
+	TsubakuraEnraku: {
+		FindYabusame: It would be a big trouble since Yabusame know nothing about this
+		YabusameReply: Don't know, mew
+		Reminder:
+			'''
+			This place seems really Primal and dangerous
+			take care of yourself while I'm not around you.
+			'''
+		YabusameReply2: I know I know... I can use Dimensional Division to these guys.
+		WishToExit: Wish that we can hold on until the day we get out...
+		DisplayName: Tsubakura Enraku
+		Regular_0: Before figuring out the situation, I'll follow you and do some investigation first.
+		Regular_1: No matter how I think about it, it was probably that guy who did it.
+		Regular_2: Trouble really keeps piling up...
 	}
 }
 
@@ -23,9 +31,9 @@ Buffs: {
 		Description: How did they get here?
 	}
 
-	MyPetBuff: {
-		DisplayName: My Pet Buff
-		Description: Mods.LenenPets.Buffs.MyPetBuff.Description
+	TsubakuraBuff: {
+		DisplayName: Fadeout Ink Flower
+		Description: Another priest of the Senri Shrine came here
 	}
 }
 
@@ -41,8 +49,16 @@ Items: {
 			'''
 	}
 
-	MyPetItem: {
-		DisplayName: My Pet Item
-		Tooltip: ""
+	MonochromeChinesebrush: {
+		DisplayName: Monochrome Chinesebrush
+		Tooltip:
+			'''
+			Summon a Bird of Monochrome
+
+			As may be the most reliable one in Senri
+			They decide to follow you to investigate this world,
+			and find the reason why they came here.
+			... or use this as an excuse to enjoy with you.
+			'''
 	}
 }
