@@ -19,6 +19,15 @@ Projectiles: {
 		Regular_1: 怎么想都大约是那家伙干的好事
 		Regular_2: 麻烦事真是越堆越多了...
 	}
+
+	TsubakurowaHaruchou.DisplayName: 燕羽 玄兆
+
+	Shion: {
+		// Regular_0: Mods.LenenPets.Projectiles.Shion.Regular_0
+		// Regular_1: Mods.LenenPets.Projectiles.Shion.Regular_1
+		// Regular_2: Mods.LenenPets.Projectiles.Shion.Regular_2
+		// DisplayName: Shion
+	}
 }
 
 Buffs: {
@@ -30,6 +39,16 @@ Buffs: {
 	TsubakuraBuff: {
 		DisplayName: 暗转墨花
 		Description: 另一位阐里神主也来到这里了
+	}
+
+	TsubakurowaBuff: {
+		DisplayName: 银玄天际
+		Description: 来自东方天海瀑的小伙伴
+	}
+
+	ShionBuff: {
+		DisplayName: 费城飞蓬
+		Description: 宛宛来吸取你的灵魂啦
 	}
 }
 
@@ -55,5 +74,21 @@ Items: {
 			决定跟着你调查这个世界，以及来到这里的原因
 			——或者单纯以此为借口跟着你一起享乐也说不定
 			'''
+	}
+
+	MonochromeFeather: {
+		DisplayName: 单彩之羽
+		Tooltip:
+			'''
+			召唤一只妖怪燕
+
+			这位是来自天海瀑的小伙伴
+			我说玄玄99有没有懂的
+			'''
+	}
+
+	ShionHarujion: {
+		DisplayName: 不详纯粹的春紫苑
+		Tooltip: 召唤
 	}
 }

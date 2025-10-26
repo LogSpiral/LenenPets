@@ -23,6 +23,15 @@ Projectiles: {
 		Regular_1: No matter how I think about it, it was probably that guy who did it.
 		Regular_2: Trouble really keeps piling up...
 	}
+
+	TsubakurowaHaruchou.DisplayName: Tsubakurowa Haruchou
+
+	Shion: {
+		Regular_0: Mods.LenenPets.Projectiles.Shion.Regular_0
+		Regular_1: Mods.LenenPets.Projectiles.Shion.Regular_1
+		Regular_2: Mods.LenenPets.Projectiles.Shion.Regular_2
+		DisplayName: Shion
+	}
 }
 
 Buffs: {
@@ -34,6 +43,16 @@ Buffs: {
 	TsubakuraBuff: {
 		DisplayName: Fadeout Ink Flower
 		Description: Another priest of the Senri Shrine came here
+	}
+
+	TsubakurowaBuff: {
+		DisplayName: Silver Black Sky
+		Description: The little friend from 东方天海瀑
+	}
+
+	ShionBuff: {
+		DisplayName: Shion Buff
+		Description: Mods.LenenPets.Buffs.ShionBuff.Description
 	}
 }
 
@@ -60,5 +79,21 @@ Items: {
 			and find the reason why they came here.
 			... or use this as an excuse to enjoy with you.
 			'''
+	}
+
+	MonochromeFeather: {
+		DisplayName: Monochrome Feather
+		Tooltip:
+			'''
+			Summon a youkai Swallow
+
+			She is the little friend came from 东方天海瀑
+			You know, Tsubakura and Tsubakurowa
+			'''
+	}
+
+	ShionHarujion: {
+		DisplayName: Shion Harujion
+		Tooltip: ""
 	}
 }
