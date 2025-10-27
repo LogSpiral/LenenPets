@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
+using Terraria.GameContent.ItemDropRules;
 using TouhouPets;
 namespace LenenPets.Content.Pets.Shion;
 
@@ -15,5 +16,18 @@ public class ShionHarujion : ModItem
         if (!player.HasBuff(BuffType<ShionBuff>()))
             player.AddBuff(Item.buffType, 2);
         return false;
+    }
+}
+public class HaurjionLoot : GlobalNPC
+{
+    public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)
+    {
+        int type = ItemType<ShionHarujion>();
+        if (npc.type == NPCID.Ghost)
+            npcLoot.Add(ItemDropRule.Common(type, 200));
+        if (npc.type == NPCID.Wraith)
+            npcLoot.Add(ItemDropRule.Common(type, 100));
+        if (npc.type == NPCID.DungeonSpirit)
+            npcLoot.Add(ItemDropRule.Common(type, 50));
     }
 }

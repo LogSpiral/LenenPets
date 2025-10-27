@@ -1,4 +1,6 @@
-﻿using LenenPets.Content.PetsStates.Core;
+﻿using LenenPets.Content.Pets.PetCollection.ShrineTeam;
+using LenenPets.Content.PetsStates.Core;
+using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 
 namespace LenenPets.Content.Pets.Shion;
@@ -30,8 +32,10 @@ public partial class Shion : BasicLenenPet
     {
         Projectile.timeLeft = 2;
         var player = Owner;
-
-        if (!player.HasBuff(BuffType<ShionBuff>()) || player.dead)
+        bool selfBuff = player.HasBuff<ShionBuff>();
+        bool teamBuff = player.HasBuff<ShrineTeamBuff>();
+        IdleState.PositionOffset = teamBuff ? new Vector2(0, -64) : new Vector2(56, -34);
+        if (!(selfBuff || teamBuff) || player.dead)
         {
             Projectile.velocity *= 0;
             Projectile.frame = 0;

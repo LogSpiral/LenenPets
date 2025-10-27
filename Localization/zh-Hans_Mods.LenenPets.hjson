@@ -23,10 +23,27 @@ Projectiles: {
 	TsubakurowaHaruchou.DisplayName: 燕羽 玄兆
 
 	Shion: {
-		// Regular_0: Mods.LenenPets.Projectiles.Shion.Regular_0
-		// Regular_1: Mods.LenenPets.Projectiles.Shion.Regular_1
-		// Regular_2: Mods.LenenPets.Projectiles.Shion.Regular_2
-		// DisplayName: Shion
+		Regular_0: 宛宛这是在哪？平时都不怎么被允许走出来的说...
+		Regular_1: 这个世界上，有很多沾染罪恶的灵魂，你的手上也有不少
+		Regular_2: 你的灵魂，感觉比较奇特，小死宛可以尝尝你的灵魂的味道吗
+		DisplayName: 死宛
+		Dialogue_Tsubakura_1_1: 喂喂能别再啃我灵魂了吗，搞不好我真要倒在这种地方了
+		Dialogue_Tsubakura_1_2: 宛宛饿了嘛，阿玄这么强大，没问题的
+		Dialogue_Tsubakura_1_3: 拿你没办法了
+		Dialogue_Tsubakura_2_1: 这里的许多灵魂我都未曾见过，光明的，黑暗的，扭曲的，不祥的，空虚的，杂糅的，它们的味道也很是难以评说...
+		Dialogue_Tsubakura_2_2: 别吃了别吃了，你要吃这些灵魂进化成那些怪物了就不好办了
+		Dialogue_Tsubakura_2_3: 欸阿玄阿玄，这里好像也有叫作噬魂怪的怪物，我好像从来没见过它们吃灵魂来着
+		Dialogue_Tsubakura_2_4: 那种东西到底是怎么吃的啦
+		Dialogue_ShrineTeam_1: 上一次这样一起行动还是战争游戏那次呢...
+		Dialogue_ShrineTeam_2: 欸——好像那次之后一直没注意到雀巳有什么新动静了
+		Dialogue_ShrineTeam_3: 没动静最好，但是很可能又在谋划些什么
+		Dialogue_ShrineTeam_4: 那个雀巳到底是想要干什么嘛，感觉不是什么正常的家伙
+		Dialogue_ShrineTeam_5: 不对，难道我们会在这样一个陌生的地方也是被雀巳做局了吗
+		Dialogue_ShrineTeam_6: 这样的讨论总感觉之前好像发生过...
+		Dialogue_ShrineTeam_7: 宛宛有感受到哦，之前见过的其他人灵魂的味道，来到这里的不止我们才对
+		Dialogue_ShrineTeam_8: 谜团越来越多了
+		Dialogue_ShrineTeam_9: 头疼就不要再去想啦玄鸟，来一起吃便当吧
+		Dialogue_ShrineTeam_10: 有宛宛的灵魂便当吗
 	}
 }
 
@@ -49,6 +66,11 @@ Buffs: {
 	ShionBuff: {
 		DisplayName: 费城飞蓬
 		Description: 宛宛来吸取你的灵魂啦
+	}
+
+	ShrineTeamBuff: {
+		DisplayName: 玄皓双生混魂鸟
+		Description: 神社组！
 	}
 }
 
@@ -88,7 +110,23 @@ Items: {
 	}
 
 	ShionHarujion: {
-		DisplayName: 不详纯粹的春紫苑
-		Tooltip: 召唤
+		DisplayName: 不祥纯粹的春紫苑
+		Tooltip:
+			'''
+			召唤一只混魂体
+
+			外界随处可见的路边花
+			在这个世界似乎混入了更加复杂的灵魂
+			祂饿了的时候也许会以你的灵魂为食哦
+			'''
+	}
+
+	SenriEye: {
+		DisplayName: 阐里之瞳
+		Tooltip:
+			'''
+			集结神社组
+			"黑恶阐里势力登场"
+			'''
 	}
 }

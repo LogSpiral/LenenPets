@@ -1,4 +1,5 @@
-﻿using LenenPets.Content.PetsAnimations.ExtraAnimations;
+﻿using LenenPets.Content.Pets.PetCollection.ShrineTeam;
+using LenenPets.Content.PetsAnimations.ExtraAnimations;
 using LenenPets.Content.PetsAnimations.PetCharacterAnimations;
 using LenenPets.Content.PetsStates.Core;
 using Microsoft.Xna.Framework;
@@ -32,7 +33,7 @@ public partial class TsubakuraEnraku : BasicLenenPet
         Projectile.timeLeft = 2;
         var player = Owner;
 
-        if (!player.HasBuff(BuffType<TsubakuraBuff>()) || player.dead)
+        if (!(player.HasBuff<TsubakuraBuff>() || player.HasBuff<ShrineTeamBuff>()) || player.dead)
         {
             Projectile.velocity *= 0;
             Projectile.frame = 0;

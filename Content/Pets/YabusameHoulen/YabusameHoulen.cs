@@ -1,4 +1,5 @@
-﻿using LenenPets.Content.PetsStates.Core;
+﻿using LenenPets.Content.Pets.PetCollection.ShrineTeam;
+using LenenPets.Content.PetsStates.Core;
 using System.Collections.Generic;
 
 namespace LenenPets.Content.Pets.YabusameHoulen;
@@ -39,7 +40,7 @@ public partial class YabusameHoulen : BasicLenenPet
         Projectile.timeLeft = 2;
         var player = Owner;
 
-        if (!player.HasBuff(BuffType<YabusameBuff>()) || player.dead)
+        if (!(player.HasBuff<YabusameBuff>() || player.HasBuff<ShrineTeamBuff>()) || player.dead)
         {
             Projectile.velocity *= 0;
             Projectile.frame = 0;

@@ -11,7 +11,7 @@ public partial class Shion
     public override ChatSettingConfig ChatSettingConfig =>
         new ChatSettingConfig() with
         {
-            TextColor = Color.Lerp(Color.Lerp(Color.Black,Color.MediumPurple,Main.rand.NextFloat()),Color.Purple,Main.rand.NextFloat())
+            TextColor = Color.MediumPurple
         };
 
     public override void RegisterChat(ref string name, ref Vector2 indexRange)
@@ -22,7 +22,7 @@ public partial class Shion
     public override void SetRegularDialog(ref int timePerDialog, ref int chance, ref bool whenShouldStop)
     {
         timePerDialog = 721;
-        chance = 6;
+        chance = 1;
         whenShouldStop = CharacterAnimation is not IdleAnimation _;
     }
     public override WeightedRandom<LocalizedText> RegularDialogText()

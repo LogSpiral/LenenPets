@@ -5,7 +5,7 @@ Projectiles: {
 		DisplayName: Yabusame Houlen
 		Regular_0: It seems that I crossing to some where wierd, Uwa
 		Regular_1: Do you reconize Tsurubami？ Is this the outside world that Tsurubami in?
-		Regular_2: I bring some food, do you want a bite?
+		Regular_2: I bring some bento, do you want a bite?
 	}
 
 	TsubakuraEnraku: {
@@ -27,10 +27,27 @@ Projectiles: {
 	TsubakurowaHaruchou.DisplayName: Tsubakurowa Haruchou
 
 	Shion: {
-		Regular_0: Mods.LenenPets.Projectiles.Shion.Regular_0
-		Regular_1: Mods.LenenPets.Projectiles.Shion.Regular_1
-		Regular_2: Mods.LenenPets.Projectiles.Shion.Regular_2
+		Regular_0: Where am I? By normal I was not allowed to go outside...
+		Regular_1: In this world, there's plenty of soul with sin, and there's much on your hands as well.
+		Regular_2: Your soul, seems very special, can little Shion have a bite of it?
 		DisplayName: Shion
+		Dialogue_Tsubakura_1_1: DON'T eat my soul again okey, I'm nearly end in this place.
+		Dialogue_Tsubakura_1_2: Little Shion is hungry, Tsubakura san is really strong, it would be no problem.
+		Dialogue_Tsubakura_1_3: well, I'm run out of idea to stop you.
+		Dialogue_Tsubakura_2_1: I havn't meet many types of soul here, Light, Dark, Twisted, Unkind, Void, Complex, the flavor of these are hard to describe as well...
+		Dialogue_Tsubakura_2_2: You'd better eat less, what if you eat too much these soul and become a monster like these
+		Dialogue_Tsubakura_2_3: Tsubakura san, there's seems a monster called Souleater here, but I'd never seen they eat souls
+		Dialogue_Tsubakura_2_4: How to eat that kind of thing
+		Dialogue_ShrineTeam_1: Last time we go together was the battle game...
+		Dialogue_ShrineTeam_2: Well, seems Suzumi havn't taken any action after that.
+		Dialogue_ShrineTeam_3: They had better no more action, but they must plan something new.
+		Dialogue_ShrineTeam_4: What do that Suzumi want, feels they are really wierd guy.
+		Dialogue_ShrineTeam_5: Wait, what if we was trapped in this unfamiliar world is their new plan
+		Dialogue_ShrineTeam_6: This topis seems happened earlier...
+		Dialogue_ShrineTeam_7: Little Shion felt the flavor of someone we met before, there must others came to this world.
+		Dialogue_ShrineTeam_8: More and more questions
+		Dialogue_ShrineTeam_9: Don't think that if you feel headache, let's eat some bento together
+		Dialogue_ShrineTeam_10: Are there Shion's soul bento?
 	}
 }
 
@@ -51,8 +68,13 @@ Buffs: {
 	}
 
 	ShionBuff: {
-		DisplayName: Shion Buff
-		Description: Mods.LenenPets.Buffs.ShionBuff.Description
+		DisplayName: Harujion
+		Description: Little Shion comes to eat your soul!
+	}
+
+	ShrineTeamBuff: {
+		DisplayName: Shrine Team Buff
+		Description: Mods.LenenPets.Buffs.ShrineTeamBuff.Description
 	}
 }
 
@@ -93,7 +115,23 @@ Items: {
 	}
 
 	ShionHarujion: {
-		DisplayName: Shion Harujion
-		Tooltip: ""
+		DisplayName: Unkind Pure Harujion
+		Tooltip:
+			'''
+			Summon a Chimera Soul
+
+			Common road side flower in outside world
+			In this world it seems mixed with more complex souls
+			They might eat your soul when hungry
+			'''
+	}
+
+	SenriEye: {
+		DisplayName: Senri Eye
+		Tooltip:
+			'''
+			Assembles Shrine Team
+			"Shrine force came here."
+			'''
 	}
 }
