@@ -22,3 +22,5 @@ Current way to get pets as follows:
 
 Yabusame: throw a light shard into shimmer
 Tsubakura: throw a dark shard into shimmer
+Shion: Loot from Ghost or Wraith or DungeonSpirit (0.5% / 1% / 2%)
+Tsubakurowa: throw Tsubakura's summon item into shimmer
