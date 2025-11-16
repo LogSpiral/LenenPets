@@ -77,6 +77,7 @@ public partial class YabusameHoulen : BasicLenenPet
             AnnoyingSoundAnimation.SetDeactive();
             IdleAnimation.SetActive();
         }
+        CharacterClothAnimation.Frame = Projectile.frame;
     }
     private void AnnoyingStart()
     {

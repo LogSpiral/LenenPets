@@ -9,9 +9,9 @@ namespace LenenPets.Content.Pets.Extra.TsubakurowaHaruchou;
 
 public partial class TsubakurowaHaruchou
 {
-    protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, ClothAnimation, BlinkAnimation, HatAnimation];
+    protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, CharacterClothAnimation, ClothAnimation, BlinkAnimation, HatAnimation];
 
-    private static DrawPetConfig DrawConfig { get; } = new(4);
+    private static DrawPetConfig DrawConfig { get; } = new(5);
 
     private CharacterAnimation CharacterAnimation { get; set; }
 
@@ -27,13 +27,18 @@ public partial class TsubakurowaHaruchou
     private ClothAnimation ClothAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 1,
             FrameRate = 4,
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
-
+    private ExternalControlAnimations CharacterClothAnimation { get; } =
+        new()
+        {
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
+            Row = 4
+        };
     private BlinkAnimation BlinkAnimation { get; } =
         new()
         {
@@ -47,7 +52,7 @@ public partial class TsubakurowaHaruchou
     private ClothAnimation HatAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 3,
             FrameRate = 4,
             FrameIndexMin = 0,

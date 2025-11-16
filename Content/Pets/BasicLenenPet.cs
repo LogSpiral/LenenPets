@@ -36,8 +36,14 @@ public abstract class BasicLenenPet : BasicTouhouPet
 
     public override bool DrawPetSelf(ref Color lightColor)
     {
-        foreach (var animation in PetAnimations)
+        bool lastShaderRequired = false;
+        foreach (var animation in PetAnimations) 
+        {
+            if(lastShaderRequired && !animation.ShaderRequired)
+                Projectile.ResetDrawStateForPet();
             animation.Draw(this, lightColor);
+            lastShaderRequired = animation.ShaderRequired;
+        }
         return false;
     }
 

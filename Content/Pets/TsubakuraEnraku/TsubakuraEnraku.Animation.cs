@@ -8,9 +8,9 @@ namespace LenenPets.Content.Pets.TsubakuraEnraku;
 
 public partial class TsubakuraEnraku
 {
-    protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, ClothAnimation, BlinkAnimation, HatAnimation, SenriBlinkAnimation];
+    protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, CharacterClothAnimation, ClothAnimation, BlinkAnimation, HatAnimation, SenriBlinkAnimation];
 
-    private static DrawPetConfig DrawConfig { get; } = new(5);
+    private static DrawPetConfig DrawConfig { get; } = new(6);
 
     private CharacterAnimation CharacterAnimation { get; set; }
 
@@ -26,13 +26,18 @@ public partial class TsubakuraEnraku
     private ClothAnimation ClothAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 1,
             FrameRate = 4,
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
-
+    private ExternalControlAnimations CharacterClothAnimation { get; } =
+        new()
+        {
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
+            Row = 5
+        };
     private BlinkAnimation BlinkAnimation { get; } =
         new()
         {
@@ -46,9 +51,9 @@ public partial class TsubakuraEnraku
     private ClothAnimation HatAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 3,
-            FrameRate = 6,
+            FrameRate = 2,
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
@@ -60,6 +65,7 @@ public partial class TsubakuraEnraku
             ExtraAnimationRow = 4,
             FrameRate = 2,
             FrameIndexMin = 0,
-            FrameIndexMax = 4
+            FrameIndexMax = 4,
+            ForceDraw = true
         };
 }

@@ -61,6 +61,8 @@ public abstract class CharacterAnimation : IPetAnimation
 
     private bool? _pendingSwitchActive = null;
 
+    bool IPetAnimation.ShaderRequired => DrawConfig.ShouldUseEntitySpriteDraw;
+
     public void SetActive()
     {
         IsActive = true;

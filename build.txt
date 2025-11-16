@@ -1,4 +1,4 @@
 displayName = 连缘小伙伴 ~ Monochrome partners
 author = 紧闭着的阐里之瞳
-version = 0.1.2.0
+version = 0.1.2.1
 modReferences = TouhouPets

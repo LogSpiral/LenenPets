@@ -1,7 +1,5 @@
-﻿using LenenPets.Content.Pets.TsubakuraEnraku;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Terraria.Localization;
-using TouhouPets;
 using TouhouPets.Content.Projectiles.Pets;
 using Tsubakura = LenenPets.Content.Pets.TsubakuraEnraku.TsubakuraEnraku;
 
@@ -23,7 +21,7 @@ public class YabusameChatSystem : ModSystem
             (Koishi.PetID(), YabusameHoulen.GetLocalization("KoishiGreetingsToYabusame")),
             (YabusameHoulen.PetID(), YabusameHoulen.GetLocalization("YabusameReplyToKoishi")),
         ];
-        LenenPetsHelper.PetChatRoomFullRegister(list, null, 3);
+        LenenPetsHelper.PetChatRoomFullRegister(list, null, 5);
     }
 
     static void RegisterChat_TsubakuraToYabusame()
@@ -36,6 +34,6 @@ public class YabusameChatSystem : ModSystem
             (YabusameHoulen.PetID(), Tsubakura.GetLocalization("YabusameReply2")),
             (Tsubakura.PetID(), Tsubakura.GetLocalization("WishToExit")),
         ];
-        LenenPetsHelper.PetChatRoomFullRegister(list, null, 2);
+        LenenPetsHelper.PetChatRoomFullRegister(list, null, 1);
     }
 }

@@ -8,4 +8,6 @@ public interface IPetAnimation
     void Draw(BasicLenenPet pet, Color lightColor);
 
     void Update(BasicLenenPet pet);
+
+    bool ShaderRequired { get; }
 }

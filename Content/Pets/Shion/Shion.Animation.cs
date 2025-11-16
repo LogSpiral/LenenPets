@@ -8,9 +8,9 @@ namespace LenenPets.Content.Pets.Shion;
 
 public partial class Shion
 {
-    protected override IReadOnlyList<IPetAnimation> PetAnimations => [WingAnimation, CharacterAnimation, ClothAnimation, BlinkAnimation, HitaikakushiAnimation];
+    protected override IReadOnlyList<IPetAnimation> PetAnimations => [WingAnimation, CharacterAnimation,CharacterClothAnimation, ClothAnimation, BlinkAnimation, HitaikakushiAnimation];
 
-    private static DrawPetConfig DrawConfig { get; } = new(5);
+    private static DrawPetConfig DrawConfig { get; } = new(6);
 
     private CharacterAnimation CharacterAnimation { get; set; }
 
@@ -25,7 +25,7 @@ public partial class Shion
     private ShionWingAnimation WingAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true},
             ExtraAnimationRow = 4,
             FrameRate = 6,
             FrameIndexMin = 0,
@@ -34,13 +34,18 @@ public partial class Shion
     private ClothAnimation ClothAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 1,
             FrameRate = 4,
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
-
+    private ExternalControlAnimations CharacterClothAnimation { get; } =
+        new()
+        {
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
+            Row = 5
+        };
     private BlinkAnimation BlinkAnimation { get; } =
         new()
         {
@@ -54,7 +59,7 @@ public partial class Shion
     private ShionHitaikakushiAnimation HitaikakushiAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 3,
             FrameRate = 4,
             FrameIndexMin = 0,

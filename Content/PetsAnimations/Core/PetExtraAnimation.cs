@@ -6,11 +6,12 @@ namespace LenenPets.Content.PetsAnimations.Core;
 
 public abstract class PetExtraAnimation : IPetAnimation
 {
-    public virtual void Draw(BasicLenenPet pet, Color lightColor) 
+    bool IPetAnimation.ShaderRequired => DrawConfig.ShouldUseEntitySpriteDraw;
+    public virtual void Draw(BasicLenenPet pet, Color lightColor)
     {
         DefaultDraw(pet, lightColor);
     }
-    public virtual void Update(BasicLenenPet pet) 
+    public virtual void Update(BasicLenenPet pet)
     {
         DefaultUpdate(pet);
     }
@@ -29,11 +30,11 @@ public abstract class PetExtraAnimation : IPetAnimation
         if (!IsActive) return;
         Update(pet);
     }
-    protected virtual void OnActive(BasicLenenPet pet) 
+    protected virtual void OnActive(BasicLenenPet pet)
     {
 
     }
-    protected virtual void OnDeactive(BasicLenenPet pet) 
+    protected virtual void OnDeactive(BasicLenenPet pet)
     {
 
     }
@@ -51,7 +52,7 @@ public abstract class PetExtraAnimation : IPetAnimation
 
     protected int frameIndex;
 
-    protected bool IsActive 
+    protected bool IsActive
     {
         get;
         private set;
@@ -59,29 +60,29 @@ public abstract class PetExtraAnimation : IPetAnimation
 
     private bool? _pendingSwitchActive = null;
 
-    public void SetActive() 
+    public void SetActive()
     {
         IsActive = true;
         _pendingSwitchActive = true;
     }
 
-    public void SetDeactive() 
+    public void SetDeactive()
     {
         IsActive = false;
         _pendingSwitchActive = false;
     }
 
-    protected void DefaultDraw(BasicLenenPet pet, Color lightColor) 
+    protected void DefaultDraw(BasicLenenPet pet, Color lightColor)
     {
         if (!IsActive) return;
         pet.Projectile.DrawPet(
-            frameIndex, 
-            lightColor, 
-            DrawConfig, 
+            frameIndex,
+            lightColor,
+            DrawConfig,
             ExtraAnimationRow);
     }
 
-    protected void DefaultUpdate(BasicLenenPet pet) 
+    protected void DefaultUpdate(BasicLenenPet pet)
     {
         frameCounter++;
         if (frameCounter > FrameRate)

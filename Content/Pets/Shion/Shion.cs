@@ -52,9 +52,9 @@ public partial class Shion : BasicLenenPet
 
     protected override void UpdateStatus()
     {
-
         if (mainTimer % 270 == 0)
             BlinkAnimation.SetActive();
+        CharacterClothAnimation.Frame = Projectile.frame;
     }
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }

@@ -8,9 +8,9 @@ namespace LenenPets.Content.Pets.YabusameHoulen;
 
 public partial class YabusameHoulen
 {
-    protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, ClothAnimation, BlinkAnimation, AnnoyingSoundAnimation];
+    protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, CharacterClothAnimation, ClothAnimation, BlinkAnimation, AnnoyingSoundAnimation];
 
-    private static DrawPetConfig DrawConfig { get; } = new(4);
+    private static DrawPetConfig DrawConfig { get; } = new(5);
 
     private CharacterAnimation CharacterAnimation { get; set; }
 
@@ -34,10 +34,17 @@ public partial class YabusameHoulen
             AnnoyingCountMax = 14
         };
 
+    private ExternalControlAnimations CharacterClothAnimation { get; } =
+        new()
+        {
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
+            Row = 4
+        };
+
     private ClothAnimation ClothAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig,
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 1,
             FrameRate = 4,
             FrameIndexMin = 0,
@@ -63,4 +70,6 @@ public partial class YabusameHoulen
             FrameIndexMin = 0,
             FrameIndexMax = 1
         };
+
+
 }

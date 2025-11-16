@@ -13,6 +13,7 @@ public partial class TsubakurowaHaruchou : BasicLenenPet
     {
         Main.projFrames[Type] = 5;
         Main.projPet[Type] = true;
+        ProjectileID.Sets.LightPet[Type] = true;
 
         ProjectileID.Sets.CharacterPreviewAnimations[Type] =
             ProjectileID.Sets.SimpleLoop(0, 1);
@@ -51,6 +52,7 @@ public partial class TsubakurowaHaruchou : BasicLenenPet
     {
         if (mainTimer % 270 == 0)
             BlinkAnimation.SetActive();
+        CharacterClothAnimation.Frame = Projectile.frame;
     }
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }

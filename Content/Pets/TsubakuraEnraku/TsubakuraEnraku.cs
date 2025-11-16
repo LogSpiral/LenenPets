@@ -54,6 +54,7 @@ public partial class TsubakuraEnraku : BasicLenenPet
             BlinkAnimation.SetActive();
         if (mainTimer % 600 == 0)
             SenriBlinkAnimation.SetActive();
+        CharacterClothAnimation.Frame = Projectile.frame;
     }
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }
