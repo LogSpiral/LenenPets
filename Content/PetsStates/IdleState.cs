@@ -19,11 +19,11 @@ public class IdleState : IPetState
             pet.MoveToPoint(point, SpeedFactor, IdleCenter ?? Vector2.Zero);
     }
 
-    public required Vector2 PositionOffset { get; set; }
+    public Vector2 PositionOffset { get; set; }
 
-    public required float RotationFactor { get; set; }
+    public float RotationFactor { get; set; }
 
-    public required float SpeedFactor { get; set; }
+    public float SpeedFactor { get; set; }
 
     public Vector2? IdleCenter { get; set; } = null;
 }

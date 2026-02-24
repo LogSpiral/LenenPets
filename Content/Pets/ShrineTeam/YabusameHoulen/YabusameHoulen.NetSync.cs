@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace LenenPets.Content.Pets.YabusameHoulen;
+namespace LenenPets.Content.Pets.ShrineTeam.YabusameHoulen;
 
 public partial class YabusameHoulen
 {

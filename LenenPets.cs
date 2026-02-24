@@ -1,9 +1,8 @@
-global using Terraria;
-global using Terraria.ModLoader;
-global using Terraria.ID;
 global using LenenPets.Tools;
+global using Terraria;
+global using Terraria.ID;
+global using Terraria.ModLoader;
 global using static Terraria.ModLoader.ModContent;
-using Terraria.DataStructures;
 
 namespace LenenPets;
 
@@ -11,6 +10,7 @@ namespace LenenPets;
 public class LenenPets : Mod
 {
     public static LenenPets Instance { get; private set; }
+
     public override void Load()
     {
         Instance = this;

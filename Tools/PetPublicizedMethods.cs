@@ -5,15 +5,14 @@ namespace LenenPets.Tools;
 
 public static class PetPublicizedMethods
 {
-
-    extension(BasicLenenPet pet) 
+    extension(BasicLenenPet pet)
     {
         /// <summary>
         /// 常规移动AI
         /// </summary>
         /// <param name="point">移动到的位置</param>
         /// <param name="speed">移动速度</param>
-        public void MoveToPoint( Vector2 point, float speed, Vector2 center = default)
+        public void MoveToPoint(Vector2 point, float speed, Vector2 center = default)
         {
             if (center == default)
             {
@@ -44,7 +43,7 @@ public static class PetPublicizedMethods
         /// </summary>
         /// <param name="point">移动到的位置</param>
         /// <param name="speed">移动速度</param>
-        public void MoveToPoint2( Vector2 point, float speed)
+        public void MoveToPoint2(Vector2 point, float speed)
         {
             Vector2 targetPos = pet.Owner.Center + point;
             Vector2 targetVel = targetPos - pet.Projectile.Center;
@@ -62,7 +61,7 @@ public static class PetPublicizedMethods
         /// 设置转向
         /// </summary>
         /// <param name="dist">设置与玩家同向的最小距离</param>
-        public void ChangeDir( float dist = 100)
+        public void ChangeDir(float dist = 100)
         {
             if (pet.Projectile.Distance(pet.Owner.Center) <= dist)
             {
@@ -81,5 +80,4 @@ public static class PetPublicizedMethods
             }
         }
     }
-
 }

@@ -21,15 +21,16 @@ public abstract class BasicLenenPet : BasicTouhouPet
         Language.GetOrRegister(result);
         return result;
     }
+
     protected abstract IReadOnlyList<IPetAnimation> PetAnimations { get; }
 
     protected abstract IReadOnlyList<IPetState> PetStates { get; }
 
     protected IPetState CurrentState => PetStates[PetState];
 
-    protected IdleState IdleState { get; } = new IdleState() 
+    protected IdleState IdleState { get; } = new IdleState()
     {
-        PositionOffset = new Vector2(56,-34),
+        PositionOffset = new Vector2(56, -34),
         RotationFactor = 0.01f,
         SpeedFactor = 13f
     };
@@ -37,9 +38,9 @@ public abstract class BasicLenenPet : BasicTouhouPet
     public override bool DrawPetSelf(ref Color lightColor)
     {
         bool lastShaderRequired = false;
-        foreach (var animation in PetAnimations) 
+        foreach (var animation in PetAnimations)
         {
-            if(lastShaderRequired && !animation.ShaderRequired)
+            if (lastShaderRequired && !animation.ShaderRequired)
                 Projectile.ResetDrawStateForPet();
             animation.Draw(this, lightColor);
             lastShaderRequired = animation.ShaderRequired;
@@ -66,5 +67,6 @@ public abstract class BasicLenenPet : BasicTouhouPet
 
     protected abstract bool CheckActive();
 
-    protected virtual void UpdateStatus() { }
+    protected virtual void UpdateStatus()
+    { }
 }

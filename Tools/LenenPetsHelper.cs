@@ -47,7 +47,7 @@ public static class LenenPetsHelper
         else
         {
             HashSet<int> requiredPetsCache = [.. from pair in chatRoomInfoList select pair.Item1];
-            bool MemberCondition() 
+            bool MemberCondition()
             {
                 HashSet<int> requiredPets = [.. requiredPetsCache];
                 foreach (var proj in Main.projectile)

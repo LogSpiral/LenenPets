@@ -1,11 +1,9 @@
 ﻿using LenenPets.Content.PetsAnimations.ExtraAnimations;
 using LenenPets.Content.PetsAnimations.PetCharacterAnimations;
 using LenenPets.Content.PetsStates.Core;
-using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 
 namespace LenenPets.Content.Pets.Extra.TsubakurowaHaruchou;
-
 
 public partial class TsubakurowaHaruchou : BasicLenenPet
 {
@@ -54,5 +52,6 @@ public partial class TsubakurowaHaruchou : BasicLenenPet
             BlinkAnimation.SetActive();
         CharacterClothAnimation.Frame = Projectile.frame;
     }
+
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }

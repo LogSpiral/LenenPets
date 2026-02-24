@@ -12,12 +12,14 @@ public class BlinkAnimation : PetExtraAnimation
         frameCounter = 0;
         frameIndex = FrameIndexMin;
     }
+
     public override void Update(BasicLenenPet pet)
     {
         DefaultUpdate(pet);
         if (frameCounter == 0 && frameIndex == FrameIndexMin)
             SetDeactive();
     }
+
     public override void Draw(BasicLenenPet pet, Color lightColor)
     {
         if (IsActive || ForceDraw)
@@ -27,5 +29,6 @@ public class BlinkAnimation : PetExtraAnimation
                 DrawConfig,
                 ExtraAnimationRow);
     }
+
     public bool ForceDraw { get; set; }
 }

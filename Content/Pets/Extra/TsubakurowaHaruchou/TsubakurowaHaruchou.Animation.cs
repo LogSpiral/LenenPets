@@ -6,7 +6,6 @@ using TouhouPets;
 
 namespace LenenPets.Content.Pets.Extra.TsubakurowaHaruchou;
 
-
 public partial class TsubakurowaHaruchou
 {
     protected override IReadOnlyList<IPetAnimation> PetAnimations => [CharacterAnimation, CharacterClothAnimation, ClothAnimation, BlinkAnimation, HatAnimation];
@@ -33,12 +32,14 @@ public partial class TsubakurowaHaruchou
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
+
     private ExternalControlAnimations CharacterClothAnimation { get; } =
         new()
         {
             DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             Row = 4
         };
+
     private BlinkAnimation BlinkAnimation { get; } =
         new()
         {

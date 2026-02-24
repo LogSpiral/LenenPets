@@ -135,3 +135,35 @@ Items: {
 			'''
 	}
 }
+
+Achievements: {
+	WelcomeToLenenPets: {
+		FriendlyName: Welcome To Lenen Pets
+		Description: Mods.LenenPets.Achievements.WelcomeToLenenPets.Description
+	}
+
+	BirdOfDimension: {
+		FriendlyName: Bird Of Dimension
+		Description: Mods.LenenPets.Achievements.BirdOfDimension.Description
+	}
+
+	BirdOfMonochrome: {
+		FriendlyName: Bird Of Monochrome
+		Description: Mods.LenenPets.Achievements.BirdOfMonochrome.Description
+	}
+
+	ChimeraSoul: {
+		FriendlyName: Chimera Soul
+		Description: Mods.LenenPets.Achievements.ChimeraSoul.Description
+	}
+
+	ShrineTeam: {
+		FriendlyName: Shrine Team
+		Description: Mods.LenenPets.Achievements.ShrineTeam.Description
+	}
+
+	SilverBlackSky: {
+		FriendlyName: Silver Black Sky
+		Description: Mods.LenenPets.Achievements.SilverBlackSky.Description
+	}
+}

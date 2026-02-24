@@ -4,7 +4,7 @@ using LenenPets.Content.PetsAnimations.PetCharacterAnimations;
 using System.Collections.Generic;
 using TouhouPets;
 
-namespace LenenPets.Content.Pets.YabusameHoulen;
+namespace LenenPets.Content.Pets.ShrineTeam.YabusameHoulen;
 
 public partial class YabusameHoulen
 {
@@ -70,6 +70,4 @@ public partial class YabusameHoulen
             FrameIndexMin = 0,
             FrameIndexMax = 1
         };
-
-
 }

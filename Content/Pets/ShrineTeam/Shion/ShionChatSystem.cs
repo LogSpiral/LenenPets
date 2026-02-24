@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using Terraria.Localization;
-using Tsubakura = LenenPets.Content.Pets.TsubakuraEnraku.TsubakuraEnraku;
-using Yabusame = LenenPets.Content.Pets.YabusameHoulen.YabusameHoulen;
-namespace LenenPets.Content.Pets.Shion;
+using Tsubakura = LenenPets.Content.Pets.ShrineTeam.TsubakuraEnraku.TsubakuraEnraku;
+using Yabusame = LenenPets.Content.Pets.ShrineTeam.YabusameHoulen.YabusameHoulen;
+
+namespace LenenPets.Content.Pets.ShrineTeam.Shion;
 
 public class ShionChatSystem : ModSystem
 {
@@ -14,7 +15,7 @@ public class ShionChatSystem : ModSystem
         base.PostSetupContent();
     }
 
-    static void RegisterChat_Tsubakura_1()
+    private static void RegisterChat_Tsubakura_1()
     {
         List<(int, LocalizedText)> list =
         [
@@ -24,7 +25,8 @@ public class ShionChatSystem : ModSystem
         ];
         LenenPetsHelper.PetChatRoomFullRegister(list, null, 2);
     }
-    static void RegisterChat_Tsubakura_2()
+
+    private static void RegisterChat_Tsubakura_2()
     {
         List<(int, LocalizedText)> list =
         [
@@ -36,7 +38,7 @@ public class ShionChatSystem : ModSystem
         LenenPetsHelper.PetChatRoomFullRegister(list, null, 2);
     }
 
-    static void RegisterChat_ShrineTeam()
+    private static void RegisterChat_ShrineTeam()
     {
         List<(int, LocalizedText)> list =
         [

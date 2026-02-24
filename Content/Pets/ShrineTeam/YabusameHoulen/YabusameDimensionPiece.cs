@@ -2,22 +2,24 @@
 using Terraria.DataStructures;
 using TouhouPets;
 
-namespace LenenPets.Content.Pets.TsubakuraEnraku;
+namespace LenenPets.Content.Pets.ShrineTeam.YabusameHoulen;
 
-public class MonochromeChinesebrush:ModItem
+public class YabusameDimensionPiece : ModItem
 {
     public override void SetStaticDefaults()
     {
-        ItemID.Sets.ShimmerTransformToItem[ItemID.DarkShard] = Type;
+        ItemID.Sets.ShimmerTransformToItem[ItemID.LightShard] = Type;
     }
+
     public override void SetDefaults()
     {
-        Item.DefaultToVanitypet(ProjectileType<TsubakuraEnraku>(), BuffType<TsubakuraBuff>());
-        Item.DefaultToVanitypetExtra(22, 42);
+        Item.DefaultToVanitypet(ProjectileType<YabusameHoulen>(), BuffType<YabusameBuff>());
+        Item.DefaultToVanitypetExtra(26, 34);
     }
+
     public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
     {
-        if (!player.HasBuff(BuffType<TsubakuraBuff>()))
+        if (!player.HasBuff(BuffType<YabusameBuff>()))
             player.AddBuff(Item.buffType, 2);
         return false;
     }

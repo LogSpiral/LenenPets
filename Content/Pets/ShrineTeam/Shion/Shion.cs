@@ -3,7 +3,7 @@ using LenenPets.Content.PetsStates.Core;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 
-namespace LenenPets.Content.Pets.Shion;
+namespace LenenPets.Content.Pets.ShrineTeam.Shion;
 
 public partial class Shion : BasicLenenPet
 {
@@ -26,7 +26,6 @@ public partial class Shion : BasicLenenPet
         HitaikakushiAnimation.SetActive();
         WingAnimation.SetActive();
     }
-
 
     protected override bool CheckActive()
     {
@@ -56,5 +55,6 @@ public partial class Shion : BasicLenenPet
             BlinkAnimation.SetActive();
         CharacterClothAnimation.Frame = Projectile.frame;
     }
+
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }

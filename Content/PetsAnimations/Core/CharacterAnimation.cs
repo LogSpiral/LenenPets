@@ -10,6 +10,7 @@ public abstract class CharacterAnimation : IPetAnimation
     {
         DefaultDraw(pet, lightColor);
     }
+
     void IPetAnimation.Update(BasicLenenPet pet)
     {
         if (_pendingSwitchActive is true)
@@ -25,27 +26,29 @@ public abstract class CharacterAnimation : IPetAnimation
         if (!IsActive || IsFinished) return;
         Update(pet);
     }
+
     public virtual void Update(BasicLenenPet pet)
     {
         DefaultUpdate(pet);
     }
+
     protected virtual void OnActive(BasicLenenPet pet)
     {
-
     }
+
     protected virtual void OnDeactive(BasicLenenPet pet)
     {
-
     }
+
     public int CharacterAnimationRow { get; set; } = 0;
 
-    public required DrawPetConfig DrawConfig { get; set; }
+    public DrawPetConfig DrawConfig { get; set; }
 
-    public required int FrameIndexMin { get; set; }
+    public int FrameIndexMin { get; set; }
 
-    public required int FrameIndexMax { get; set; }
+    public int FrameIndexMax { get; set; }
 
-    public required int FrameRate { get; set; }
+    public int FrameRate { get; set; }
 
     protected bool IsActive
     {

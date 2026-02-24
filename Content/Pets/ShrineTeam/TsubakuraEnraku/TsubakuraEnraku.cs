@@ -5,7 +5,7 @@ using LenenPets.Content.PetsStates.Core;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 
-namespace LenenPets.Content.Pets.TsubakuraEnraku;
+namespace LenenPets.Content.Pets.ShrineTeam.TsubakuraEnraku;
 
 public partial class TsubakuraEnraku : BasicLenenPet
 {
@@ -56,5 +56,6 @@ public partial class TsubakuraEnraku : BasicLenenPet
             SenriBlinkAnimation.SetActive();
         CharacterClothAnimation.Frame = Projectile.frame;
     }
+
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }

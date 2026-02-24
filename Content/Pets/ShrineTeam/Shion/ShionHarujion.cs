@@ -2,7 +2,8 @@
 using Terraria.DataStructures;
 using Terraria.GameContent.ItemDropRules;
 using TouhouPets;
-namespace LenenPets.Content.Pets.Shion;
+
+namespace LenenPets.Content.Pets.ShrineTeam.Shion;
 
 public class ShionHarujion : ModItem
 {
@@ -11,6 +12,7 @@ public class ShionHarujion : ModItem
         Item.DefaultToVanitypet(ProjectileType<Shion>(), BuffType<ShionBuff>());
         Item.DefaultToVanitypetExtra(26, 34);
     }
+
     public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
     {
         if (!player.HasBuff(BuffType<ShionBuff>()))
@@ -18,6 +20,7 @@ public class ShionHarujion : ModItem
         return false;
     }
 }
+
 public class HaurjionLoot : GlobalNPC
 {
     public override void ModifyNPCLoot(NPC npc, NPCLoot npcLoot)

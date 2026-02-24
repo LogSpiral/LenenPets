@@ -1,6 +1,6 @@
 ﻿using TouhouPets.Content.Buffs;
-namespace LenenPets.Content.Pets.Extra.TsubakurowaHaruchou;
 
+namespace LenenPets.Content.Pets.Extra.TsubakurowaHaruchou;
 
 public class TsubakurowaBuff : BasicPetBuff
 {

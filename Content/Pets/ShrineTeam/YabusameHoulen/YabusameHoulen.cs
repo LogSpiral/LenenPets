@@ -2,7 +2,7 @@
 using LenenPets.Content.PetsStates.Core;
 using System.Collections.Generic;
 
-namespace LenenPets.Content.Pets.YabusameHoulen;
+namespace LenenPets.Content.Pets.ShrineTeam.YabusameHoulen;
 
 public partial class YabusameHoulen : BasicLenenPet
 {
@@ -11,6 +11,7 @@ public partial class YabusameHoulen : BasicLenenPet
         get => (int)Projectile.localAI[0];
         set => Projectile.localAI[0] = value;
     }
+
     public override void PetStaticDefaults()
     {
         Main.projFrames[Type] = 5;
@@ -57,7 +58,6 @@ public partial class YabusameHoulen : BasicLenenPet
 
     protected override void UpdateStatus()
     {
-
         if (CharacterAnimation == IdleAnimation)
         {
             ActionCD--;
@@ -79,6 +79,7 @@ public partial class YabusameHoulen : BasicLenenPet
         }
         CharacterClothAnimation.Frame = Projectile.frame;
     }
+
     private void AnnoyingStart()
     {
         AnnoyingAnimation.SetActive();
@@ -86,5 +87,6 @@ public partial class YabusameHoulen : BasicLenenPet
         AnnoyingSoundAnimation.SetActive();
         CharacterAnimation = AnnoyingAnimation;
     }
+
     protected override IReadOnlyList<IPetState> PetStates => [IdleState];
 }

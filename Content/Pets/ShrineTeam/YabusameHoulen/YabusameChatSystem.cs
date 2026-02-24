@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Terraria.Localization;
 using TouhouPets.Content.Projectiles.Pets;
-using Tsubakura = LenenPets.Content.Pets.TsubakuraEnraku.TsubakuraEnraku;
+using Tsubakura = LenenPets.Content.Pets.ShrineTeam.TsubakuraEnraku.TsubakuraEnraku;
 
-namespace LenenPets.Content.Pets.YabusameHoulen;
+namespace LenenPets.Content.Pets.ShrineTeam.YabusameHoulen;
 
 public class YabusameChatSystem : ModSystem
 {
@@ -14,7 +14,7 @@ public class YabusameChatSystem : ModSystem
         base.PostSetupContent();
     }
 
-    static void RegisterChat_KoishiToYabusame()
+    private static void RegisterChat_KoishiToYabusame()
     {
         List<(int, LocalizedText)> list =
         [
@@ -24,7 +24,7 @@ public class YabusameChatSystem : ModSystem
         LenenPetsHelper.PetChatRoomFullRegister(list, null, 5);
     }
 
-    static void RegisterChat_TsubakuraToYabusame()
+    private static void RegisterChat_TsubakuraToYabusame()
     {
         List<(int, LocalizedText)> list =
         [

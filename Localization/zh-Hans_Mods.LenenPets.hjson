@@ -130,3 +130,59 @@ Items: {
 			'''
 	}
 }
+
+Achievements: {
+	WelcomeToLenenPets: {
+		FriendlyName: 感谢订阅连缘小伙伴！
+		Description:
+			'''
+			和无现里的各位一起笨蛋吧~
+			极度缓慢更新中...
+			'''
+	}
+
+	BirdOfDimension: {
+		FriendlyName: 次元之鸟
+		Description:
+			'''
+			皓色的光明碎片
+			在微光的嬗变下会转换成次元碎块
+			'''
+	}
+
+	BirdOfMonochrome: {
+		FriendlyName: 单彩之鸟
+		Description:
+			'''
+			玄色的黑暗碎片
+			在微光的嬗变下会转换成单彩毛笔
+			'''
+	}
+
+	ChimeraSoul: {
+		FriendlyName: 混魂体
+		Description:
+			'''
+			墓碑旁的鬼魂 飘浮着的幻灵 还有地牢的幽魂
+			祂们哺育着这朵 不祥的花
+			'''
+	}
+
+	ShrineTeam: {
+		FriendlyName: 神社组
+		Description:
+			'''
+			集结神社组一家三口(?
+			整整齐齐~
+			'''
+	}
+
+	SilverBlackSky: {
+		FriendlyName: 银玄天际
+		Description:
+			'''
+			来自 东方天海瀑 的燕羽玄兆小姐！
+			一时兴起就擅自做进来了，如有不妥即时移除(
+			'''
+	}
+}

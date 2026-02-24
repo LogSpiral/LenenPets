@@ -4,27 +4,29 @@ using Terraria.Localization;
 using Terraria.Utilities;
 using TouhouPets;
 
-namespace LenenPets.Content.Pets.YabusameHoulen;
+namespace LenenPets.Content.Pets.ShrineTeam.Shion;
 
-public partial class YabusameHoulen
+public partial class Shion
 {
     public override ChatSettingConfig ChatSettingConfig =>
         new ChatSettingConfig() with
         {
-            TextColor = Color.LightGray
+            TextColor = Color.MediumPurple
         };
 
     public override void RegisterChat(ref string name, ref Vector2 indexRange)
     {
-        name = "Yabusame";
+        name = "Shion";
         indexRange = new Vector2(0, 2);
     }
+
     public override void SetRegularDialog(ref int timePerDialog, ref int chance, ref bool whenShouldStop)
     {
         timePerDialog = 721;
-        chance = 6;
+        chance = 1;
         whenShouldStop = CharacterAnimation is not IdleAnimation _;
     }
+
     public override WeightedRandom<LocalizedText> RegularDialogText()
     {
         WeightedRandom<LocalizedText> chat = new();

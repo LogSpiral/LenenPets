@@ -4,11 +4,11 @@ using LenenPets.Content.PetsAnimations.PetCharacterAnimations;
 using System.Collections.Generic;
 using TouhouPets;
 
-namespace LenenPets.Content.Pets.Shion;
+namespace LenenPets.Content.Pets.ShrineTeam.Shion;
 
 public partial class Shion
 {
-    protected override IReadOnlyList<IPetAnimation> PetAnimations => [WingAnimation, CharacterAnimation,CharacterClothAnimation, ClothAnimation, BlinkAnimation, HitaikakushiAnimation];
+    protected override IReadOnlyList<IPetAnimation> PetAnimations => [WingAnimation, CharacterAnimation, CharacterClothAnimation, ClothAnimation, BlinkAnimation, HitaikakushiAnimation];
 
     private static DrawPetConfig DrawConfig { get; } = new(6);
 
@@ -22,15 +22,17 @@ public partial class Shion
             FrameIndexMin = 0,
             FrameIndexMax = 0
         };
+
     private ShionWingAnimation WingAnimation { get; } =
         new()
         {
-            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true},
+            DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             ExtraAnimationRow = 4,
             FrameRate = 6,
             FrameIndexMin = 0,
             FrameIndexMax = 4
         };
+
     private ClothAnimation ClothAnimation { get; } =
         new()
         {
@@ -40,12 +42,14 @@ public partial class Shion
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
+
     private ExternalControlAnimations CharacterClothAnimation { get; } =
         new()
         {
             DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             Row = 5
         };
+
     private BlinkAnimation BlinkAnimation { get; } =
         new()
         {

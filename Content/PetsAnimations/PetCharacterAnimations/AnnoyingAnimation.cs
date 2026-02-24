@@ -6,10 +6,11 @@ namespace LenenPets.Content.PetsAnimations.PetCharacterAnimations;
 
 public class AnnoyingAnimation : CharacterAnimation
 {
-    public required int AnnoyingCountMin { get; init; }
-    public required int AnnoyingCountMax { get; init; }
+    public int AnnoyingCountMin { get; init; }
+    public int AnnoyingCountMax { get; init; }
     private int _annoyingCount;
     private bool _netLock;
+
     public override void Update(BasicLenenPet pet)
     {
         pet.Projectile.frameCounter++;
@@ -29,6 +30,7 @@ public class AnnoyingAnimation : CharacterAnimation
             IsFinished = true;
         }
     }
+
     protected override void OnActive(BasicLenenPet pet)
     {
         if (!_netLock)
@@ -40,6 +42,7 @@ public class AnnoyingAnimation : CharacterAnimation
     {
         writer.Write((byte)_annoyingCount);
     }
+
     public void NetReceive(BinaryReader reader)
     {
         _annoyingCount = reader.ReadByte();

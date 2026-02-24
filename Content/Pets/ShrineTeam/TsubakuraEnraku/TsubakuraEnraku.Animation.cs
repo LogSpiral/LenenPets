@@ -4,7 +4,7 @@ using LenenPets.Content.PetsAnimations.PetCharacterAnimations;
 using System.Collections.Generic;
 using TouhouPets;
 
-namespace LenenPets.Content.Pets.TsubakuraEnraku;
+namespace LenenPets.Content.Pets.ShrineTeam.TsubakuraEnraku;
 
 public partial class TsubakuraEnraku
 {
@@ -32,12 +32,14 @@ public partial class TsubakuraEnraku
             FrameIndexMin = 0,
             FrameIndexMax = 3
         };
+
     private ExternalControlAnimations CharacterClothAnimation { get; } =
         new()
         {
             DrawConfig = DrawConfig with { ShouldUseEntitySpriteDraw = true },
             Row = 5
         };
+
     private BlinkAnimation BlinkAnimation { get; } =
         new()
         {
